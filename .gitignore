@@ -1,0 +1,6 @@
+#Secrets
+*.key
+*private*
+.env
+*.qcow2
+*.iso
