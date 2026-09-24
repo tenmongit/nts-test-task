@@ -1,0 +1,8 @@
+[Interface]
+Address = 10.0.8.1/24
+ListenPort = 51820
+PrivateKey = <PRIVATEKEY>
+
+[Peer]
+PublicKey = <SRV2_PUBLIC_KEY>
+AllowedIPs = 10.0.8.2/32

@@ -4,3 +4,8 @@
 .env
 *.qcow2
 *.iso
+wg0.conf
+*wg0.conf
+id_ed25519
+id_rsa
+*.pem
