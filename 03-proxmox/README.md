@@ -27,21 +27,27 @@
 ## Проверка
 
 Proxmox установлен
+
 <a href="screenshots/pve-summary.png"><img src="screenshots/pve-summary.png" width="760" alt="Proxmox VE 9.2.2 установлен"></a>
 
 Вложенная виртуализация доступна
+
 <a href="screenshots/pve-nested-virt.png"><img src="screenshots/pve-nested-virt.png" width="760" alt="Вложенная виртуализация доступна: egrep -c '(vmx|svm)' /proc/cpuinfo"></a>
 
 ISO Alpine загружен через Download from URL
+
 <a href="screenshots/pve-iso-storage.png"><img src="screenshots/pve-iso-storage.png" width="760" alt="ISO Alpine загружен через Download from URL"></a>
 
 Параметры ВМ 100
+
 <a href="screenshots/vm100-hardware.png"><img src="screenshots/vm100-hardware.png" width="760" alt="Параметры ВМ 100"></a>
 
 ВМ 100 загрузилась
+
 <a href="screenshots/vm100-console.png"><img src="screenshots/vm100-console.png" width="760" alt="ВМ 100 загрузилась: Alpine Linux 3.24"></a>
 
 Репозиторий переключён на no-subscription
+
 <a href="screenshots/pve-repositories.png"><img src="screenshots/pve-repositories.png" width="760" alt="Репозиторий переключён на no-subscription"></a>
 
 ## Почему так

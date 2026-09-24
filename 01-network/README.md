@@ -122,6 +122,7 @@ tcpdump -ni enp1s0 -e vlan # кадр 102 байта против 98 без ме
 <a href="screenshots/vlan-tcpdump-untagged.png"><img src="screenshots/vlan-tcpdump-untagged.png" width="760" alt="Без меток в пакете"></a>
 
 Пинг из VLAN 10 в VLAN 20 не проходит
+
 <a href="screenshots/vlan-isolation.png"><img src="screenshots/vlan-isolation.png" width="760" alt="Изоляция"></a>
 
 ```bash
