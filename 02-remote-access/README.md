@@ -8,11 +8,13 @@
 ## Что сделано
 
 1. Сгенерировали пару ключей на клиенте (nts-srv2) и скопировали публичный ключ на сервер
+
 ```bash
 ssh-keygen -t ed25519
 
 ssh-copy-id ntstest@192.168.122.3
 ```
+
 2. Создали конфиг для отключения входа по паролю 10-hardening.conf в /etc/ssh/sshd_config.d/ и перезапустили sshd
 
 ```bash
@@ -20,6 +22,7 @@ sudo systemctl reload ssh
 ```
 
 3. Создали ключи WireGuard на двух ВМ и wg0.conf, настроили автозагрузку в systemd
+
 ```bash
 umask 077
 wg genkey | tee private.key | wg pubkey > public.key
@@ -28,6 +31,7 @@ wg-quick up wg0
 
 sudo systemctl enable wg-quick@wg0
 ```
+
 ## Конфигурация
 
 [10-hardening.conf](10-hardening.conf)
@@ -45,13 +49,16 @@ sudo systemctl enable wg-quick@wg0
 ## Проверка
 
 Вход по паролю отключён
+
 ```bash
 ssh -o PubkeyAuthentication=no ntstest@192.168.122.3
 Permission denied (publickey)
 ```
-![Без доступа](screenshots/password_auth_disabled.png)
+
+<a href="screenshots/password_auth_disabled.png"><img src="screenshots/password_auth_disabled.png" width="760" alt="Без доступа"></a>
 
 Итоговая конфигурация sshd
+
 ```bash
 sudo sshd -T | grep -Ei 'passwordauthentication|permitrootlogin'
 
@@ -60,16 +67,20 @@ passwordauthentication no
 ```
 
 Туннель поднят
+
 ```bash
 sudo wg show #смотрим на latest handshake
 ```
-![wg show: latest handshake](screenshots/wg_handshake.png)
+
+<a href="screenshots/wg_handshake.png"><img src="screenshots/wg_handshake.png" width="760" alt="wg show: latest handshake"></a>
 
 Связь внутри туннеля
+
 ```bash
 ping -c 3 10.0.8.1 # с srv2
 ```
-![wireguard_vpn](screenshots/wireguard_vpn.png)
+
+<a href="screenshots/wireguard_vpn.png"><img src="screenshots/wireguard_vpn.png" width="760" alt="wireguard_vpn"></a>
 
 ## Почему так
 

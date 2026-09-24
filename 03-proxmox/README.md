@@ -27,22 +27,22 @@
 ## Проверка
 
 Proxmox установлен
-![Proxmox VE 9.2.2 установлен](screenshots/pve-summary.png)
+<a href="screenshots/pve-summary.png"><img src="screenshots/pve-summary.png" width="760" alt="Proxmox VE 9.2.2 установлен"></a>
 
 Вложенная виртуализация доступна
-![Вложенная виртуализация доступна: egrep -c '(vmx|svm)' /proc/cpuinfo](screenshots/pve-nested-virt.png)
+<a href="screenshots/pve-nested-virt.png"><img src="screenshots/pve-nested-virt.png" width="760" alt="Вложенная виртуализация доступна: egrep -c '(vmx|svm)' /proc/cpuinfo"></a>
 
 ISO Alpine загружен через Download from URL
-![ISO Alpine загружен через Download from URL](screenshots/pve-iso-storage.png)
+<a href="screenshots/pve-iso-storage.png"><img src="screenshots/pve-iso-storage.png" width="760" alt="ISO Alpine загружен через Download from URL"></a>
 
 Параметры ВМ 100
-![Параметры ВМ 100](screenshots/vm100-hardware.png)
+<a href="screenshots/vm100-hardware.png"><img src="screenshots/vm100-hardware.png" width="760" alt="Параметры ВМ 100"></a>
 
 ВМ 100 загрузилась
-![ВМ 100 загрузилась: Alpine Linux 3.24](screenshots/vm100-console.png)
+<a href="screenshots/vm100-console.png"><img src="screenshots/vm100-console.png" width="760" alt="ВМ 100 загрузилась: Alpine Linux 3.24"></a>
 
 Репозиторий переключён на no-subscription
-![Репозиторий переключён на no-subscription](screenshots/pve-repositories.png)
+<a href="screenshots/pve-repositories.png"><img src="screenshots/pve-repositories.png" width="760" alt="Репозиторий переключён на no-subscription"></a>
 
 ## Почему так
 - Alpine был выбран из-за образа в 66 МБ и малого расхода ОЗУ на вложенной ВМ
